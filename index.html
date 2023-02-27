@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio    </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -20,7 +20,7 @@ I am a Software Developer
                  </pre>
                  
             </div>
-            <div id="div3" class = "ldiv" style="animation: mymove 1.5s ;">
+            <div id="div3" class = "divl divlg" style="animation: mymove 1.5s ;">
                 <a href="ROHITH_IT.pdf" download>
                 <button class="btn">Download Resume    </button>
                 <img src="images/download-logo-png-image-77292.jpg" height="25px" width="25px" style="position: relative; display:flex; left: 372px;top: 220px;">
@@ -39,7 +39,7 @@ I am a Software Developer
     </section>
 
 
-    <div style="position: relative; display: flex;left: -120px;">
+    <div style="position: relative; display: flex;left: -120px;" id="abt">
             <div style="position: relative; display: flex; color: white; justify-content: center;
              top: 180px;left: 670px; font-size: xxx-large; text-shadow: 3px 3px 1px rgb(129, 12, 168) ;">ABOUT MYSELF</div>
             <div class="box" style="top:350px; left: 150px; color:white;">
@@ -89,7 +89,7 @@ I am a Software Developer
         </div>
 
     </div>
-        <div style="position: relative; ;text-align: center; font-size: xxx-large;left: -25px ;color: white; top: 800px;"> SKILLS</div>
+        <div id="sk" style="position: relative; ;text-align: center; font-size: xxx-large;left: -25px ;color: white; top: 800px;"> SKILLS</div>
     <div class = "dis">
                 
                 <img title="INTERMEDIATE" class ='logo1' src="logo/python.jpg" alt="">
@@ -107,11 +107,57 @@ I am a Software Developer
     
 
 
-<div class="pro">
-    <div style="position: relative; display: flex; color: white; justify-content: center;
-    top: 1100px; left: 580px; font-size: xxx-large; text-shadow: 3px 3px 1px rgb(129, 12, 168) ;">PROJECTS</div>
+<div class="pro" >
+    <div style="position: absolute; display: flex; color: white; justify-content: center;
+    top: 1100px; left: 580px; font-size: xxx-large; text-shadow: 3px 3px 1px rgb(129, 12, 168) ;" id="pro">PROJECTS</div>
 
 
+</div>
+<div  class="container">
+    <div class="box0" >
+        <div class="icon"><img src="water/13.png" width="100%"  height="100%" alt="">
+        </div>
+        <div class="content">
+            <h3>SMART WATER DISPENSER</h3>
+            <p>Since the human body consists of 50-65% water, water
+                consumptions are essential for people. So in working place or any situation, there is
+                a necessity to satisfy the water demand. The system which is proposed in this
+                paper satisfies the requests of groups of people who have access to the water
+                dispenser. Tehnology used Jetson nano, Ardiuno uno, Python. 
+            </p>
+        
+        </div>
+        </div>
+        <div class="box0">
+            <div class="icon"><img src="trans/SL1.jpeg" width="100%"  height="100%" alt=""></div>
+            <div class="content">
+                <h3>SPEECH-TO-TEXT TRANSLATOR</h3>
+                <p>Speech-to-text conversion is the process of converting spoken
+                    words into written texts. This process is also often called speech recognition.
+                    Speech recognition is sometimes used to describe the wider process of extracting
+                    meaning from speech, i.e. speech understanding. Technology used are Python and 
+                    Python Kivy for front-end UI.
+                </p>
+            
+            </div>
+
+        </div>
+        <div class="box0">
+            <div class="icon"><img src="laser/4.jpeg" width="100%"  height="100%" alt=""></div>
+            <div class="content">
+                <h3>Border Monitoring Device </h3>
+                <p>A system to monitor the border range by a laser beam with
+                    image processing, If some obstruction happens alert message will be
+                    informed through GSM module, and radio frequency. So, that no one will
+                    cross the restricted area with any knowledge. Tehnology used Rasberry pi, 
+                    Ardiuno uno, GSM module, Python
+                    
+                </p>
+            
+            </div>
+        </div>
+
+    </div>
 
 
 
@@ -122,7 +168,27 @@ I am a Software Developer
 
 </div>
 
-    
+<div id="navbar">
+    <a href="#pro">Projects</a>
+    <a href="#sk">Skills</a>
+    <a href="#abt">About</a>
+  </div>
+  
+ 
+  
+  <script>
+  // When the user scrolls down 20px from the top of the document, slide down the navbar
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+  }
+  </script>
+  
     
     
 </body>
